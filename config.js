@@ -22,7 +22,7 @@ const settingsMenu = [
   ]
 DATABASE_URL = process.env.DATABASE_URL === undefined ? './bot.db' : process.env.DATABASE_URL;
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
-if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("Raganork~7f1c74881905021df0a88a22c37484c0:616f6a35746e534e3830303d")
+if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("")
 module.exports = {
     VERSION: 'v4.0.0',
     ALIVE: process.env.ALIVE || "https://i.imgur.com/KCnoMM2.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
@@ -48,7 +48,7 @@ module.exports = {
     REJECT_CALLS: convertToBool(process.env.REJECT_CALLS) || false,
     PMB: process.env.PMB || '_Personal messages not allowed, BLOCKED!_',
     READ_COMMAND: convertToBool(process.env.READ_COMMAND) || true,
-    SESSION: (process.env.SESSION || process.env.SESSION_ID || 'Raganork~7f1c74881905021df0a88a22c37484c0:616f6a35746e534e3830303d').trim() || '',
+    SESSION: (process.env.SESSION || process.env.SESSION_ID || '').trim() || 'Raganork~7f1c74881905021df0a88a22c37484c0:616f6a35746e534e3830303d',
     IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
     RG: process.env.RG || '919074309534-1632403322@g.us,120363116963909366@g.us',
     BOT_INFO: process.env.BOT_INFO || 'N1z4r - ⵣ;Skl11;0;https://i.imgur.com/P7ziVhr.jpeg;https://chat.whatsapp.com/HrIwmyC8stUCBcGDbSt1MD',
